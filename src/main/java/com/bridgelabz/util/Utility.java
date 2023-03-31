@@ -56,7 +56,7 @@ public class Utility extends BaseClass {
 
         File sourceFile = takesScreenshot.getScreenshotAs((OutputType.FILE));
 
-        File destinationFile = new File("./screenshots/"+System.currentTimeMillis() + "_screenshot.png");
+        File destinationFile = new File(System.getProperty("user.dir")+"/screenshots/"+System.currentTimeMillis() + "_screenshot.png");
 
         try {
             FileHandler.copy(sourceFile, destinationFile);

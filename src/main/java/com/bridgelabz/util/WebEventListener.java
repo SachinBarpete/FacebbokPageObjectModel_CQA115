@@ -119,9 +119,9 @@ public class WebEventListener extends BaseClass implements WebDriverEventListene
     }
 
     @Override
-    public void onException(Throwable throwable, WebDriver driver) {
+    public void onException(Throwable error, WebDriver driver) {
 
-        System.out.println("Exception Occured: "+throwable);
+        System.out.println("Exception Occured: "+error);
         Utility.captureScreenshot();
     }
 
